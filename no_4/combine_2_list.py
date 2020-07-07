@@ -1,10 +1,11 @@
-'''
+"""
 Sort and combine these 2 lists and print the result
 Input 1: 4,3,6,5,1,2
 Input 2: F,C,D,B,A
 Output : [1:A],[2:B],[3:C],[4:D],[5:F],[6:NULL]
 Edited Output: (due to wrong output shape): [1,"A"],[2, "B"],[3, "C"],[4, "D"],[5, "F"],[6, "NULL"]
-'''
+"""
+
 
 class SortCombine(object):
     def sort_combine(self, list1, list2):
@@ -24,7 +25,7 @@ class SortCombine(object):
                 output.append([list1[i], list2[i]])
             i += 1
             n1 -= 1
-            n2 -=1
+            n2 -= 1
         return output
 
 

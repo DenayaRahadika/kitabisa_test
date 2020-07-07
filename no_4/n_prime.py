@@ -1,14 +1,15 @@
-'''
+"""
 Find first N prime number, and print the result
 Input: 4
 Output : 2, 3, 5, 7
 
-'''
+"""
+
 
 class PrimeBuilder(object):
     def is_prime(self, x):
         # if there is any number between 1 and x-1 that can divide x, then x is not prime
-        return not any(x//i == x/i for i in range(x-1, 1, -1))
+        return not any(x // i == x / i for i in range(x - 1, 1, -1))
 
     def n_prime(self, n):
         prime_arrays = []
